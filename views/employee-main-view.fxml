@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="703.0" prefWidth="922.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="338.0" layoutY="93.0" prefHeight="58.0" prefWidth="227.0" text="Select order" textFill="#39ff14">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <TableView layoutX="89.0" layoutY="224.0" prefHeight="346.0" prefWidth="756.0" style="-fx-background-color: #005C53;">
+        <columns>
+          <TableColumn prefWidth="181.0" text="budget" />
+          <TableColumn prefWidth="257.0" text="Description" />
+            <TableColumn prefWidth="317.0" text="BuildName" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>
