@@ -1,0 +1,108 @@
+
+.header-label {
+    -fx-font-family: 'Visby Round CF Bold';
+    -fx-font-size: 14;
+    -fx-text-fill: -mfx-text-he;
+}
+
+.header-label .text {
+    -fx-font-smoothing-type: lcd;
+}
+
+.sub-header-label {
+    -fx-font-family: 'Visby Round CF Demi Bold';
+    -fx-text-fill: -mfx-text-he;
+}
+
+.sub-header-label .text {
+    -fx-font-smoothing-type: lcd;
+}
+
+.grid-pane {
+    -fx-background-color: transparent;
+}
+
+.grid-background {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.12, -1.0, 2.0);
+}
+
+
+.table-view {
+    -fx-background-color: white;
+    -fx-background-radius: 5;
+    -fx-border-color: lightgray;
+    -fx-border-radius: 5;
+    -fx-padding: 0 0 2 0;
+}
+
+.table-view .columns-container {
+    -fx-border-color: transparent transparent lightgray transparent;
+}
+
+.table-view .default-footer {
+    -fx-border-color: lightgray transparent transparent transparent;
+    -fx-padding: 10;
+}
+
+.table-view .default-footer .icon-wrapper .ripple-generator {
+    -mfx-ripple-radius: 18;
+}
+
+/********************
+Table Columns
+********************/
+.table-column {
+    -fx-border-color: transparent white transparent transparent;
+    -fx-padding: 10 15 10 15;
+}
+
+.table-column:hover,
+.table-column:dragged {
+    -fx-border-color: transparent lightgray transparent transparent;
+}
+
+/********************
+Table Rows
+********************/
+.table-row {
+    -fx-background-color: transparent;
+}
+
+.table-row:hover {
+    -fx-background-color: #F5F5F5;
+}
+
+.table-row:selected {
+    -fx-background-color: #E1E1E1;
+}
+
+.table-row .ripple-generator {
+    -mfx-ripple-radius: 30;
+    -mfx-ripple-color: #C8C8C8;
+}
+
+/********************
+Table Row Cells
+********************/
+.table-row-cell {
+    -fx-background-color: transparent;
+    -fx-padding: 5 15 5 15;
+}
+
+.table-row-cell,
+.able-row-cell:focused {
+    -fx-border-color: transparent;
+}
+
+/********************
+Virtual Flow
+********************/
+.table-view .virtual-flow {
+    -fx-background-color: transparent;
+
+    -track-color: rgb(230, 230, 230);
+    -thumb-color: rgb(137, 137, 137);
+    -thumb-hover-color: rgb(89, 88, 91);
+}

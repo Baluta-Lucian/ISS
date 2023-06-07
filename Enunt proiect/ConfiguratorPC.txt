@@ -1,0 +1,57 @@
+Configurator PC:
+
+Angajatii si clientii firmei dispun de o aplicatie soft pentru configurarea PC-ului dorit
+Angajatii se logheaza cu credetialele lor la aplicatia soft; 
+Angajatii au propriul lor domeniu de operare : *Budget-Build ($600-$850)
+					       *Mid-Range($1000-$2000)
+					       *High-End($2000+)
+Clientii pot plasa o cerere de build specificand bugetul lor(sistemul ii afiseaza in ce categorie de build intra
+cu bugetul precizat de client (budget,mid,high)) si optiunea de a selecta cu periferice sau nu
+ 	-Daca nu exista nici un angajat cu domeniul de interes al clientului sistemul ii va preciza clientului(la plasarea request-ului) ca
+		momentan nu exista angajati care se ocupa de domeniul de interes al clientului;
+
+-dupa plasare clientul poate modifica sau sterge comanda(in momentul acesta sistemul goleste build-ul actual facut de catre angajat sau anuleaza tot build-ul)
+
+-angajatul poate sa anuleze build-ul in cazul in care nu mai exista piese necesare(apasa pe un buton anuleaza)
+
+Angajatilor li se afiseaza lista de pending pe domeniul lor de interes 
+Angajatii selecteaza un client din lista de pending(ii se deschide o fereastra aferenta clientului)
+ si ii poate adauga componente din lista de componente disponibile pentru configurarea PC-ului; PC-ul poate fi configurat doar in bugetul selectat de client(fara taxa de build);
+												la fiecare selectare a unei componente ii se va actualiza bugetul aferent clientului si listele de componente disponibile in functie de
+												bugetul curent
+Dupa finalizarea build-ului angajatul apasa un buton "trimite" care ii va trimite oferta clientului + taxele aferente build-ului si termenul de predare selectat de angajat, iar clientul poate accepta sau refuza build-ul
+La acceptarea build-ului clientul isi introduce datele si selecteaza modalitatea de plata
+
+Firma se mai ocupa si de mententanta, iar clientul poate selecta in meniul afisat la deschiderea aplicatiei daca doreste mentenanta sau build
+Clientul poate selecta una dintre urmatoarele categorii: *Basic(curatare pc)
+							 *Average(curatare pc + schimbarea pastei termoconductoare)
+							 *Full(curatare pc + schimbarea pastei termoconductoare + curatarea perifericelor)
+-clientului ii se va afisa pretul aferent fiecarei operatiuni
+-clientul trimite cererea, completeaza datele, selecteaza data la care poate preda pc, respectiv periferice si alege modalitatea de plata
+
+-logout
+
+
+
+
+
+
+
+
+-autentificare(client,angajat)/
+-depunere request(client)/
+-vizualizare lista request(angajat)/
+-selectare request(angajat)/
+-anulare request(client)/
+-modificare request(client)/
+-anulare request cu descrierea motivului(angajat)/
+-trimitere request(angajat)/
+-raspuns request(client)/
+-logout(client,angajat)/
+
+
+
+
+link-uri utile : -https://www.logicalincrements.com/
+		 -https://mitreacostel.weebly.com/structura-unui-pc.html
+		 -https://computerinfobits.com/how-to-know-if-my-pc-is-low-end-or-high-end/

@@ -1,0 +1,5 @@
+evaluare ISS:
+
+	-proiect lab 40%
+	-examen scris 60%
+	+activitati

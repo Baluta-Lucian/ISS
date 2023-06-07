@@ -1,0 +1,131 @@
+.box-form {
+    -fx-margin: 0 auto;
+    -fx-width: 80%;
+    -fx-background-color: null;
+    -fx-border-radius: 10px;
+    -fx-overflow: hidden;
+    -fx-display: flex;
+    -fx-flex: 1 1 100%;
+    -fx-align-items: stretch;
+    -fx-justify-content: space-between;
+    -fx-box-shadow: 0 0 20px 6px #090b6f85;
+}
+
+.left {
+    -fx-color: #FFFFFF;
+    /*-fx-background-size: cover;*/
+    /*https://i0.wp.com/blog.cyberpowerpc.com/wp-content/uploads/2022/02/How-to-Fix-a-Gaming-PC-That-Wont-Turn-On.jpg?resize=1024%2C576&ssl=1 pc1*!*/
+    /*<a href="https://ibb.co/CHzh4KY"><img src="https://i.ibb.co/CHzh4KY/pc1.webp" alt="pc1" border="0" /></a>*/
+    /*-fx-background-image: url("https://i.pinimg.com/736x/5d/73/ea/5d73eaabb25e3805de1f8cdea7df4a42--tumblr-backgrounds-iphone-phone-wallpapers-iphone-wallaper-tumblr.jpg");*/
+    /*-fx-background-image: url("https://i.pinimg.com/236x/ba/77/78/ba7778c229eea0cd5d9c557a592443e2.jpg");*/
+    /*-fx-background-size: 1.0;*/
+    -fx-background-size: 1.0, 1.0, true, true, false, false;
+    -fx-background-image: url("https://i0.wp.com/blog.cyberpowerpc.com/wp-content/uploads/2022/02/How-to-Fix-a-Gaming-PC-That-Wont-Turn-On.jpg?resize=551%2C556&ssl=1");
+    -fx-background-repeat: no-repeat;
+    -fx-overflow: hidden;
+}
+
+.body-content {
+    -fx-background-color: linear-gradient(to bottom,#FAB2FF 10%, #1904E5 100%);
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-attachment: fixed;
+    -fx-font-family: "Open Sans", sans-serif;
+    -fx-color: #333333;
+}
+
+.overlay {
+    -fx-padding: 30px;
+    -fx-width: 100%;
+    -fx-height: 100%;
+    /*-fx-background-color: #5961f9ad;*/
+    -fx-overflow: hidden;
+    -fx-box-sizing: border-box;
+}
+
+.h1 {
+    /*-fx-font-size: 10vmax;*/
+    -fx-line-height: 1;
+    -fx-font-weight: 900;
+    -fx-margin-top: 40px;
+    -fx-margin-bottom: 20px;
+}
+
+
+
+.right {
+    -fx-background-color: white;
+    -fx-padding: 40px;
+    -fx-overflow: hidden;
+}
+
+.inputs {
+    -fx-overflow: hidden;
+}
+
+.credentials {
+    -fx-width: 100%;
+    -fx-padding: 10px;
+    -fx-margin-top: 25px;
+    -fx-font-size: 16px;
+    /*-fx-border: none;*/
+    -fx-border-style: hidden hidden solid hidden;
+    -fx-outline: hidden;
+    /*-fx-border-bottom: 2px solid #B0B3B9;*/
+    -fx-border-width: 2px;
+    -fx-border-color: #B0B3B9;
+    -fx-background-color: -fx-control-inner-background;
+    -fx-background-insets: 0;
+}
+
+
+.h5 {
+    -fx-font-size: 60px;
+    -fx-line-height: 0;
+}
+
+
+
+
+
+.remember-me {
+    -fx-display: block;
+    -fx-position: relative;
+    -fx-margin-left: 30px;
+    -fx-content: ' \f00c';
+    /*-fx-position: absolute;*/
+    -fx-font-family: FontAwesome;
+    /*-fx-background: transparent;*/
+    -fx-border: 3px solid #70F570;
+    /*-fx-border-color: #70F570;*/
+    /*-fx-border-width: 3px;*/
+    /*-fx-border-radius: 4px;*/
+    -fx-color: #70F570;
+    -fx-left: -30px;
+    -fx-transition: all 0.2s linear;
+}
+
+.remember-me:hover {
+    -fx-font-family: FontAwesome;
+    -fx-content: ' \f00c';
+    -fx-cursor: pointer;
+    -fx-color: #fff;
+    -fx-background: #70F570;
+}
+
+
+.button-props {
+    -fx-float: right;
+    /*-fx-color: #fff;*/
+    -fx-font-size: 13px;
+    -fx-padding: 12px 35px;
+    -fx-display: inline-block;
+    /*-fx-border: 0;*/
+    /*-fx-outline: 0;*/
+    -fx-box-shadow: 0px 4px 20px 0px #49c628a6;
+    -fx-background-color: linear-gradient(#70F570 10%, #49C628 100%);
+    -fx-background-radius: 50px;
+}
+
+
+

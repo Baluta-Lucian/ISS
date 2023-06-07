@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="804.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <left>
+        <AnchorPane prefHeight="464.0" prefWidth="501.0" style="-fx-background-image: url('https://wallpaperaccess.com/full/4278344.jpg?resize=501%2C464'); -fx-background-size: cover, stretch;" BorderPane.alignment="CENTER">
+            <children>
+                <Text fill="WHITE" layoutX="119.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PcBuilder" wrappingWidth="263.51171875">
+                    <font>
+                        <Font name="System Bold" size="54.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="173.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Future of Gaming">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="400.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+            <children>
+                <Text fill="#404040" layoutX="28.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Registration" wrappingWidth="206.24869537353516">
+                    <font>
+                        <Font name="Wingdings 3" size="27.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="firstNameTextField" layoutX="34.0" layoutY="100.0" prefHeight="35.0" prefWidth="202.0" promptText="First Name" style="-fx-background-color: transparent; -fx-border-color: #404040; -fx-border-width: 0px 0px 2px 0px;" />
+                <TextField fx:id="lastNameTextField" layoutX="34.0" layoutY="141.0" prefHeight="35.0" prefWidth="202.0" promptText="Last Name" style="-fx-background-color: transparent; -fx-border-color: #404040; -fx-border-width: 0px 0px 2px 0px;" />
+                <TextField fx:id="addressTextField" layoutX="34.0" layoutY="182.0" prefHeight="35.0" prefWidth="202.0" promptText="Address" style="-fx-background-color: transparent; -fx-border-color: #404040; -fx-border-width: 0px 0px 2px 0px;" />
+                <TextField fx:id="cnpTextField" layoutX="34.0" layoutY="223.0" prefHeight="35.0" prefWidth="202.0" promptText="CNP" style="-fx-background-color: transparent; -fx-border-color: #404040; -fx-border-width: 0px 0px 2px 0px;" />
+                <TextField fx:id="usernameTextField" layoutX="34.0" layoutY="305.0" prefHeight="35.0" prefWidth="202.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: #404040; -fx-border-width: 0px 0px 2px 0px;" />
+                <PasswordField fx:id="passwordTextField" layoutX="34.0" layoutY="346.0" prefHeight="35.0" prefWidth="202.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #404040; -fx-border-width: 0px 0px 2px 0px;" />
+                <Button fx:id="signupButton" layoutX="93.0" layoutY="392.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="76.0" style="-fx-background-color: #404040; -fx-background-radius: 0px;" text="Submit" textFill="WHITE">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor></Button>
+                <Text fill="#404040" layoutX="51.0" layoutY="446.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Already have an account? Login">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Text>
+            <TextField fx:id="phoneTextField" layoutX="34.0" layoutY="264.0" prefHeight="35.0" prefWidth="202.0" promptText="Phone" style="-fx-background-color: transparent; -fx-border-color: #404040; -fx-border-width: 0px 0px 2px 0px;" />
+            </children>
+        </AnchorPane>
+    </right>
+</BorderPane>

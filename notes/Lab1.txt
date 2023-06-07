@@ -1,0 +1,9 @@
+orice limbaj de programare + framework asemanator cu SceneBuilder
+
+vezi MVC, ORM
+
+*MPP s-ar putea sa lucram cu ORM
+
+Alege una din cele 6 probleme si modific-o, gandeste-te la aplicatie
+
+6-7 cazuri de utilizare reprezinta o functionalitate

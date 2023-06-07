@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="618.0" prefWidth="922.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pcbuilder.controller.ClientController">
+    <children>
+        <BorderPane layoutX="114.0" layoutY="54.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <top>
+                <AnchorPane prefHeight="65.0" prefWidth="200.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Pane layoutX="102.0" layoutY="20.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #032d4d;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <children>
+                                <ImageView fx:id="Exit" fitHeight="22.0" fitWidth="22.0" layoutX="888.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@Images/exit.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </Pane>
+                        <HBox layoutX="239.0" layoutY="1.0" prefHeight="41.0" prefWidth="726.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+                            <children>
+                                <JFXButton fx:id="customBuildBtn2" onAction="#onCustomBuildBtnPressed" prefHeight="38.0" prefWidth="273.0" styleClass="menuItem" text="Place order">
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@Images/order1.jpg" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton fx:id="buildsHistoryBtn2" onAction="#onBuildsHistoryBtnPressed" prefHeight="38.0" prefWidth="281.0" styleClass="menuItem" text="History">
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@Images/history1.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton prefHeight="38.0" prefWidth="259.0" styleClass="menuItem" text="Info">
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@Images/customer1.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton fx:id="logOutBtn2" onAction="#onLogOutBtnPressed" prefHeight="38.0" prefWidth="310.0" styleClass="menuItem" text="LogOut">
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@Images/logout1.jpg" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                            </children>
+                        </HBox>
+                        <Label fx:id="Menu" layoutX="14.0" layoutY="36.0" prefHeight="22.0" prefWidth="159.0" text="MENU" textFill="#b7b7b7" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="727.0" AnchorPane.topAnchor="36.0">
+                            <graphic>
+                                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@Images/menu1.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="MenuClose" layoutX="14.0" layoutY="36.0" prefHeight="23.0" prefWidth="159.0" text="MENU" textFill="#b7b7b7" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="727.0" AnchorPane.topAnchor="36.0">
+                            <graphic>
+                                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@Images/menu1.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+            </top>
+            <left>
+                <AnchorPane fx:id="slider" prefHeight="362.0" prefWidth="176.0" style="-fx-background-color: #0A4969;" BorderPane.alignment="CENTER">
+                    <children>
+                        <VBox layoutX="14.0" layoutY="35.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="53.0">
+                            <children>
+                                <JFXButton fx:id="customBuildBtn" alignment="BASELINE_LEFT" onAction="#onCustomBuildBtnPressed" styleClass="sidebarItem" text="Place order" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="15.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@Images/order.jpg" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton fx:id="buildsHistoryBtn" alignment="BASELINE_LEFT" onAction="#onBuildsHistoryBtnPressed" prefHeight="38.0" prefWidth="176.0" styleClass="sidebarItem" text="History" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="15.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@Images/history.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton alignment="BASELINE_LEFT" prefHeight="38.0" prefWidth="176.0" styleClass="sidebarItem" text="Info" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="15.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@Images/customer.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton fx:id="logOutBtn1" alignment="BASELINE_LEFT" onAction="#onLogOutBtnPressed" prefHeight="38.0" prefWidth="176.0" styleClass="sidebarItem" text="LogOut" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="15.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@Images/logout.jpg" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                            </children>
+                        </VBox>
+                    </children>
+                </AnchorPane>
+            </left>
+         <center>
+            <AnchorPane prefHeight="542.0" prefWidth="746.0" stylesheets="@dashboardDesign.css" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane fx:id="buildsHistoryPane" prefHeight="553.0" prefWidth="746.0">
+                     <children>
+                        <TableView fx:id="buildsHistoryTableView" layoutX="4.0" layoutY="187.0" prefHeight="152.0" prefWidth="737.0">
+                          <columns>
+                            <TableColumn fx:id="buildNameTableColumn" prefWidth="230.0" text="BuildName" />
+                            <TableColumn fx:id="budgetTableColumn" prefWidth="257.0" text="Budget" />
+                              <TableColumn fx:id="statusTableColumn" prefWidth="249.0" text="Status" />
+                          </columns>
+                        </TableView>
+                        <JFXButton fx:id="cancelOrderBtn" buttonType="RAISED" layoutX="524.0" layoutY="500.0" onAction="#onCancelBtnPressed" prefHeight="39.0" prefWidth="167.0" ripplerFill="#fbff00" styleClass="menuItem" text="Cancel Order">
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/cancel.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <textFill>
+                              <LinearGradient cycleMethod="REPEAT" endX="0.49289099526066354" endY="0.09952606635071093" startX="0.21327014218009482" startY="0.6587677725118484">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="1.0" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.75" green="0.6979166865348816" blue="0.6979166865348816" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXButton>
+                        <AnchorPane layoutX="25.0" layoutY="26.0" prefHeight="151.0" prefWidth="697.0" stylesheets="@dashboardDesign.css">
+                           <styleClass>
+                              <String fx:value="shadow" />
+                              <String fx:value="white-bg" />
+                           </styleClass>
+                           <children>
+                              <AnchorPane layoutX="14.0" layoutY="4.0" prefHeight="144.0" prefWidth="200.0" styleClass="cardClinet" stylesheets="@dashboardDesign.css">
+                                 <children>
+                                    <Label layoutX="31.0" layoutY="104.0" text="Total Builds" textFill="WHITE">
+                                       <font>
+                                          <Font name="Tahoma" size="27.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="239.0" layoutY="4.0" prefHeight="144.0" prefWidth="200.0" styleClass="cardClinet" stylesheets="@dashboardDesign.css">
+                                 <children>
+                                    <Label layoutX="31.0" layoutY="104.0" prefHeight="34.0" prefWidth="138.0" text="Builds Cost">
+                                       <font>
+                                          <Font name="Tahoma" size="27.0" />
+                                       </font>
+                                       <textFill>
+                                          <LinearGradient cycleMethod="REFLECT" endX="0.13744075829383895" endY="0.7962085308056872" startX="0.27014218009478674" startY="0.5545023696682464">
+                                             <stops>
+                                                <Stop>
+                                                   <color>
+                                                      <Color red="0.9803921580314636" green="1.0" />
+                                                   </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                   <color>
+                                                      <Color red="1.0" green="1.0" blue="1.0" />
+                                                   </color>
+                                                </Stop>
+                                             </stops>
+                                          </LinearGradient>
+                                       </textFill>
+                                    </Label>
+                                    <ImageView fitHeight="54.0" fitWidth="45.0" layoutX="148.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Images/dolar2.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="totalCostLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutY="9.0" prefHeight="65.0" prefWidth="148.0" text="324432">
+                                       <font>
+                                          <Font name="Tahoma" size="44.0" />
+                                       </font>
+                                       <textFill>
+                                          <LinearGradient cycleMethod="REFLECT" endX="0.13744075829383895" endY="0.7582938388625593" startX="0.27014218009478674" startY="0.5545023696682464">
+                                             <stops>
+                                                <Stop>
+                                                   <color>
+                                                      <Color red="0.9803921580314636" green="1.0" />
+                                                   </color>
+                                                </Stop>
+                                                <Stop offset="1.0">
+                                                   <color>
+                                                      <Color red="1.0" green="1.0" blue="1.0" />
+                                                   </color>
+                                                </Stop>
+                                             </stops>
+                                          </LinearGradient>
+                                       </textFill>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="479.0" layoutY="4.0" prefHeight="144.0" prefWidth="203.0" styleClass="cardClinet" stylesheets="@dashboardDesign.css">
+                                 <children>
+                                    <Label layoutX="19.0" layoutY="102.0" text="Placed Orders" textFill="WHITE">
+                                       <font>
+                                          <Font name="Tahoma" size="27.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <TableView fx:id="pcTableView" layoutX="4.0" layoutY="346.0" prefHeight="152.0" prefWidth="738.0">
+                           <columns>
+                              <TableColumn fx:id="buildNamePcColumn" text="BuildName" />
+                              <TableColumn fx:id="cpuPcColumn" prefWidth="75.0" text="Cpu" />
+                              <TableColumn fx:id="cpuCoolerPcColumn" prefWidth="74.0" text="CpuCooler" />
+                              <TableColumn fx:id="memoryPcColumn" prefWidth="75.0" text="Memory" />
+                              <TableColumn fx:id="motherBoardPcColumn" prefWidth="84.0" text="Mother Board" />
+                              <TableColumn fx:id="powerSupplyPcColumn" prefWidth="84.0" text="Power Supply" />
+                              <TableColumn fx:id="storagePcColumn" prefWidth="58.0" text="Storage" />
+                              <TableColumn fx:id="towerPcColumn" prefWidth="57.0" text="Tower" />
+                              <TableColumn fx:id="videoCardPcColumn" prefWidth="69.0" text="VideoCard" />
+                              <TableColumn fx:id="totalPricePcColumn" prefWidth="81.0" text="Total Price" />
+                           </columns>
+                        </TableView>
+                        <JFXButton fx:id="acceptOrderBtn" buttonType="RAISED" layoutX="373.0" layoutY="500.0" onAction="#onAcceptBtnPressed" prefHeight="39.0" prefWidth="167.0" ripplerFill="#fbff00" styleClass="menuItem" text="Accept Order">
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/Accept.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <textFill>
+                              <LinearGradient cycleMethod="REPEAT" endX="0.49289099526066354" endY="0.45971563981042657" startX="0.21327014218009482" startY="0.6587677725118484">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color green="1.0" blue="0.1666666716337204" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.6499999761581421" green="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <styleClass>
+                        <String fx:value="shadow" />
+                        <String fx:value="white-bg" />
+                     </styleClass>
+                  </AnchorPane>
+                  <AnchorPane fx:id="customBuildPane" layoutY="1.0" prefHeight="553.0" prefWidth="746.0" visible="false">
+                     <children>
+                        <TextField fx:id="budgetTextField" layoutX="65.0" layoutY="108.0" promptText="Budget..." styleClass="inputContainer" />
+                        <TextArea fx:id="descriptionTextField" layoutX="65.0" layoutY="161.0" prefHeight="200.0" prefWidth="408.0" promptText="Description..." styleClass="inputContainer" />
+                        <TextField fx:id="buildNameTextField" layoutX="65.0" layoutY="391.0" promptText="Build Name..." styleClass="inputContainer" />
+                        <JFXButton fx:id="placeOrderBtn" buttonType="RAISED" layoutX="454.0" layoutY="471.0" onAction="#onPlaceOrderBtnPressed" prefHeight="38.0" prefWidth="230.0" styleClass="menuItem" text="Place Order">
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/placeOrder.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Symbol" size="20.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient cycleMethod="REFLECT" endX="0.5687203791469194" endY="0.5592417061611374" startX="0.5308056872037914" startY="0.36018957345971564">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.1461988240480423" green="0.7894737124443054" blue="0.16764132678508759" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.5025584697723389" green="0.9706993103027344" blue="0.9868420958518982" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </JFXButton>
+                     </children>
+                     <styleClass>
+                        <String fx:value="shadow" />
+                        <String fx:value="orderContainer" />
+                     </styleClass>
+                  </AnchorPane>
+               </children>
+               <styleClass>
+                  <String fx:value="white-bg" />
+                  <String fx:value="shadow" />
+               </styleClass>
+            </AnchorPane>
+         </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

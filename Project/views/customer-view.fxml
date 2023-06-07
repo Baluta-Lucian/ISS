@@ -17,7 +17,7 @@
             <Button layoutY="14.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="200.0" style="-fx-background-color: #39ff14; -fx-background-radius: 15px;" text="Custom Build" />
          </children>
       </Pane>
-      <Pane layoutX="200.0" prefHeight="787.0" prefWidth="835.0" visible="false">
+      <Pane fx:id="customBuildPane" layoutX="200.0" prefHeight="787.0" prefWidth="835.0" visible="false">
          <children>
             <Label layoutX="238.0" layoutY="47.0" text="C" textFill="#39ff14">
                <font>
@@ -49,7 +49,7 @@
             </Button>
          </children>
       </Pane>
-      <Pane layoutX="182.0" prefHeight="787.0" prefWidth="853.0">
+      <Pane fx:id="buildsHistoryPane" layoutX="182.0" prefHeight="787.0" prefWidth="853.0">
          <children>
             <TableView layoutX="18.0" prefHeight="787.0" prefWidth="835.0" style="-fx-background-color: #005C53;">
               <columns>

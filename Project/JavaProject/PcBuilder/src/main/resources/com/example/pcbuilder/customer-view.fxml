@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="787.0" prefWidth="1035.0" style="-fx-background-color: #808080;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pcbuilder.controller.ClientController">
+   <children>
+      <Pane prefHeight="787.0" prefWidth="200.0" style="-fx-background-color: black;">
+         <children>
+            <Button fx:id="buildsHistoryBtn" layoutY="60.0" mnemonicParsing="false" onAction="#onBuildsHistoryBtnPressed" prefHeight="41.0" prefWidth="200.0" style="-fx-background-color: #39ff14; -fx-background-radius: 15px;" text="Builds History" />
+            <Button fx:id="customBuildBtn" layoutY="14.0" mnemonicParsing="false" onAction="#onCustomBuildBtnPressed" prefHeight="41.0" prefWidth="200.0" style="-fx-background-color: #39ff14; -fx-background-radius: 15px;" text="Custom Build" />
+         </children>
+      </Pane>
+      <Pane fx:id="customBuildPane" layoutX="200.0" prefHeight="787.0" prefWidth="835.0">
+         <children>
+            <Label layoutX="238.0" layoutY="47.0" text="C" textFill="#39ff14">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="263.0" layoutY="47.0" text="ustom">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="395.0" layoutY="47.0" text="B" textFill="#39ff14">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="418.0" layoutY="47.0" text="uild">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <TextField fx:id="budgetTextField" layoutX="89.0" layoutY="234.0" promptText="budget..." style="-fx-background-color: black; -fx-background-radius: 15px; -fx-border-color: white; -fx-border-radius: 15px; -fx-border-width: 2px; -fx-text-fill: #D3D3D3;" />
+            <TextArea fx:id="descriptionTextField" layoutX="89.0" layoutY="297.0" prefHeight="155.0" prefWidth="479.0" promptText="Description..." />
+            <TextField fx:id="buildNameTextField" layoutX="89.0" layoutY="486.0" promptText="Build Name..." style="-fx-background-color: black; -fx-background-radius: 15px; -fx-border-color: white; -fx-border-radius: 15px; -fx-border-width: 2px;" />
+            <Button fx:id="placeOrderBtn" layoutX="297.0" layoutY="663.0" mnemonicParsing="false" onAction="#onPlaceOrderBtnPressed" prefHeight="58.0" prefWidth="182.0" style="-fx-background-radius: 15px; -fx-background-color: #39ff14;" text="Place order">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane fx:id="buildsHistoryPane" layoutX="182.0" prefHeight="787.0" prefWidth="853.0" visible="false">
+         <children>
+            <TableView fx:id="buildsHistoryTableView" layoutX="18.0" prefHeight="787.0" prefWidth="835.0" style="-fx-background-color: #005C53;">
+              <columns>
+                <TableColumn fx:id="budgetTableColumn" prefWidth="159.0" text="budget" />
+                <TableColumn fx:id="buildNameTableColumn" prefWidth="489.0" text="buildName" />
+                  <TableColumn fx:id="statusTableColumn" prefWidth="186.0" text="Status" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</Pane>
